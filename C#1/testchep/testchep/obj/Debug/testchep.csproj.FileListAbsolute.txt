@@ -1,0 +1,8 @@
+D:\C#\testchep\testchep\bin\Debug\testchep.exe.config
+D:\C#\testchep\testchep\bin\Debug\testchep.exe
+D:\C#\testchep\testchep\bin\Debug\testchep.pdb
+D:\C#\testchep\testchep\obj\Debug\testchep.csproj.AssemblyReference.cache
+D:\C#\testchep\testchep\obj\Debug\testchep.csproj.SuggestedBindingRedirects.cache
+D:\C#\testchep\testchep\obj\Debug\testchep.csproj.CoreCompileInputs.cache
+D:\C#\testchep\testchep\obj\Debug\testchep.exe
+D:\C#\testchep\testchep\obj\Debug\testchep.pdb

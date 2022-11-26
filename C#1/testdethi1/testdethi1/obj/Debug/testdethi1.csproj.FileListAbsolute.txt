@@ -1,0 +1,8 @@
+D:\C#\testdethi1\testdethi1\bin\Debug\testdethi1.exe.config
+D:\C#\testdethi1\testdethi1\bin\Debug\testdethi1.exe
+D:\C#\testdethi1\testdethi1\bin\Debug\testdethi1.pdb
+D:\C#\testdethi1\testdethi1\obj\Debug\testdethi1.csproj.AssemblyReference.cache
+D:\C#\testdethi1\testdethi1\obj\Debug\testdethi1.csproj.SuggestedBindingRedirects.cache
+D:\C#\testdethi1\testdethi1\obj\Debug\testdethi1.csproj.CoreCompileInputs.cache
+D:\C#\testdethi1\testdethi1\obj\Debug\testdethi1.exe
+D:\C#\testdethi1\testdethi1\obj\Debug\testdethi1.pdb

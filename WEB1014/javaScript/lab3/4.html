@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        width: 50px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="button" value="Rock" onclick="getValue(0)" />
+    <input type="button" value="Paper" onclick="getValue(1)" />
+    <input type="button" value="Scissors" onclick="getValue(2)" />
+
+    <script>
+      function getValue(a) {
+        var s = Math.floor(Math.random() * 3);
+        var ss = s==0?"Rock":s==1?"Paper":"Scissors";
+        switch (a) {
+          case 0:
+            if (s == 2) {
+                
+              alert("Máy chọn: "+ss+"\nBạn đã thắng \nRock đánh bại Scissors");
+            } else if (s == 1) {
+              alert("Máy chọn: "+ss+"\nBạn đã thua \nPaper đánh bại Rock");
+            } else if (s == 0) {
+              alert("Máy chọn: "+ss+"\nBạn đã hòa");
+            } else {
+              alert(" ");
+            }
+            break;
+          case 1:
+            if (s == 2) {
+              alert("Máy chọn: "+ss+"\nBạn đã thua \nScissors đánh bại Paper");
+            } else if (s == 1) {
+              alert("Máy chọn: "+ss+"\nBạn đã hòa");
+            } else if (s == 0) {
+              alert("Máy chọn: "+ss+"\nBạn đã thắng \nPaper đánh bại Rock");
+            } else {
+              alert(" ");
+            }
+
+            break;
+          case 2:
+          if (s == 2) {
+            alert("Máy chọn: "+ss+"\nBạn đã hòa");
+            } else if (s == 1) {
+                alert("Máy chọn: "+ss+"\nBạn đã thắng \nScissors đánh bại Paper");
+            } else if (s == 0) {
+              alert("Máy chọn: "+ss+"\nBạn đã thua \nRock đánh bại Scissors");
+            } else {
+              alert(" ");
+            }
+
+            break;
+
+          default:
+            break;
+        }
+      }
+
+      var arr = ["Rock", "Paper", "Scissors"];
+    </script>
+  </body>
+</html>

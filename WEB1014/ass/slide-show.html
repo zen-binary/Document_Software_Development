@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ass</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="hi">
+        <marquee behavior="" direction="">xin chào các bạn ăn cơm chưa</marquee>
+      </div>
+      <div class="nav">
+        <div class="header">
+          <img src="image/logo.png" alt="" class="logo" />
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="slide-show.html">SlideShow</a></li>
+            <li><a href="ban-hang.html">Bán Hàng</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="conten">
+        <div class="slide">
+          <img src="image/0.jpg" alt="" id="anh" >
+          <hr>
+        </div>
+        <div class="nut">
+          
+          <input type="submit" value="First" onclick="first()">
+          <input type="submit" value="Last" onclick="last()">
+          <input type="submit" value="Pre" onclick="pre()">
+          <input type="submit" value="Next" onclick="next()">
+          <input type="submit" value="Start" onclick="start()">
+          <input type="submit" value="Stop" onclick="stop()">
+        </div>
+        
+        
+
+
+      </div>
+      <script>
+        var index = 0;
+        var img = [];
+        for (var i = 0; i < 10; i++) {
+         img[i] = new Image();
+         img[i].src = "image/"+i+".jpg";
+
+          
+        }
+        
+        
+        function first(){
+          index = 0;
+          var anh = document.getElementById("anh");
+          anh.src = "image/"+index+".jpg";
+        }
+        
+        function last(){
+          index= img.length-1;
+          v.ar anh = document.getElementById("anh");
+          anh.src = "image/"+index+".jpg"
+        }
+
+        function pre(){
+          index --;
+          if (index < 0) {
+            index = 0;
+          }
+          var anh = document.getElementById("anh");
+          anh.src = "image/"+index+".jpg"
+        
+        }
+
+        function next(){
+          if (index>=img.length) {
+            index=0;
+          }
+          index++;
+          var anh = document.getElementById("anh");
+          anh.src = "image/"+index+".jpg"
+          
+        }
+
+        function start(){
+          index++;
+          if (index==img.length) {
+            index=0;
+
+          }
+          var anh = document.getElementById("anh");
+          anh.src = "image/"+index+".jpg"
+          // anh.srt =img[index].src;
+          t=setTimeout("start()",1000);
+        }
+
+        function stop(){
+          clearTimeout(t);
+        }
+
+       window.onload=start();
+
+      </script>
+
+      <div class="footer">
+        <div class="foo">
+          <p>Email: chienlvph27953@fpt.edu.vn</p>
+          <p>Tên đăng nhập: chienlvph27953</p>
+          <p>Lớp: CP18103</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

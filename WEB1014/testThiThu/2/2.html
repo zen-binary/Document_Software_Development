@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            width: 500px;
+            height: 400px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 10px 20px;
+            
+        }
+        .txt{
+            margin: 10px 0;
+        }
+        h1{
+            text-align: center;
+            margin: 10px 0;
+        }
+        label>input{
+            float: right;
+            margin-right: 50px;
+        }
+        select{
+            float: right;
+            margin-right: 100px;
+        }
+        .rdo{
+            float: right;
+            margin-right: 40px;
+        }
+        span{
+            color: red;
+            font-size: 12px;
+            margin-left: 290px;
+        }
+        .btn{
+            text-align: center;
+            margin: 10px auto;
+        }
+        
+    </style>
+</head>
+<body>
+    
+
+    <div class="main">
+
+        <div class="form" onsubmit="return checkForm()">
+            <h1>Đăng Kí khóa học online</h1>
+            <form action="">
+                <div class="txt">
+                    <label for="">Họ tên 
+                        <input type="text" id="hoten">
+                       <br> <span id="error-hoten"></span>
+                    </label>
+                </div>
+                <div class="txt">
+                    <label for="">Email 
+                        <input type="text" id="email">
+                       <br> <span id="error-email"></span>
+                    </label>
+                </div>
+                <div class="txt">
+                    <label for="">Số Điện Thoại
+                        <input type="text" id="phone">
+                       <br> <span id="error-phone"></span>
+                    </label>
+                </div>
+                <div class="txt">
+                    <label for="">Khóa học
+                        <select name="" id="khoahoc" onchange="checkKh()">
+                            <option value="chon" selected disabled>Chọn Khóa học</option>
+                            <option value="html">Khóa học html</option>
+                            <option value="js">Khóa học Js</option>
+                            <option value="php">Khóa học Php</option>
+                        </select>
+                       <br> <span id="error-kh"></span>
+                    </label>
+                    
+                </div>
+
+                <div class="txt">
+                    <label for="">Học phí
+                        <input type="text" id="hocphi" disabled>
+                       <br> <span id="error-hocphi"></span>
+                    </label>
+                </div>
+                <div class="txt">
+                    <label for="">Hình thức học
+                        <div class="rdo" onchange="checkrdo()">
+                            <input type="radio" name="rd" id="rdo">Tại Trường
+                            <input type="radio" name="rd" id="rdo">Học Online
+                        </div>
+                       <br> <span id="error-radio"></span>
+
+                    </label>
+                </div>
+                <div class="btn">
+                    <input type="submit" value="Đăng kí" onclick="checkForm()">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        var hoten = document.getElementById("hoten");
+        var email = document.getElementById("email");
+        var phone = document.getElementById("phone");
+        var hocphi = document.getElementById("hocphi");
+        var rdo = document.getElementsByName("rd");
+        var khoahoc = document.getElementById("khoahoc");
+
+        var errorhoten = document.getElementById("error-hoten");
+        var erroremail = document.getElementById("error-email");
+        var errorphone = document.getElementById("error-phone");
+        var errorkh = document.getElementById("error-kh");
+        var errorhocphi = document.getElementById("error-hocphi");
+        var errorradio = document.getElementById("error-radio");
+        var check = true;
+        var chkemail = /\w+@\w+\.\w/;
+        var chkphone = /0\d/;
+
+        function checkKh(){
+            if (khoahoc.value=="html") {
+                hocphi.value=500;
+                errorkh.innerHTML="";
+            }
+            if (khoahoc.value=="js") {
+                hocphi.value=800;
+                errorkh.innerHTML="";
+            }
+            if (khoahoc.value=="php") {
+                hocphi.value=1000;
+                errorkh.innerHTML="";
+            }
+        }
+
+        function checkrdo(){
+            if (rdo[0].checked) {
+                errorradio.innerHTML="";
+            }
+            if (rdo[1].checked) {
+                errorradio.innerHTML="";
+            }
+
+        }
+
+        function checkForm() {
+            if(hoten.value == "" && email.value=="" && phone.value=="" && khoahoc.value=="chon" && !rdo[0].checked && !rdo[1].checked){
+                alert("Vui lòng điền đầy đủ  thông tin");
+            }
+            
+            if (hoten.value == "") {
+                hoten.style.border = "1px solid red";
+                errorhoten.innerHTML = "Vui lòng nhập họ tên";
+                check = false
+            }else{
+                hoten.style.border = "";
+                errorhoten.innerHTML = "";
+            }
+
+            if (email.value=="") {
+                email.style.border = "1px solid red";
+                erroremail.innerHTML = "Vui lòng nhập email";
+                check = false;
+            }else{
+                if (!chkemail.test(email.value)) {
+                    email.style.border = "1px solid red";
+                    erroremail.innerHTML = "Vui lòng nhập email đúng định dạng @ và .";
+                }else{
+                    email.style.border = "";
+                    erroremail.innerHTML = "";
+                }
+            }
+            if (phone.value=="") {
+                phone.style.border = "1px solid red";
+                errorphone.innerHTML = "Vui lòng nhập số điện thoại";
+                check = false;
+            }else{
+                if (!chkphone.test(phone.value)) {
+                    phone.style.border = "1px solid red";
+                    errorphone.innerHTML = "Số điện thoại phải là số và số 0 ở đầu";
+                    check = false;
+                }else{
+                    phone.style.border = "";
+                    errorphone.innerHTML = "";
+                }
+            }
+
+            if (khoahoc.value=="chon") {
+                errorkh.innerHTML="Bạn chưa chọn khóa học";
+                
+            }
+            
+            if (!rdo[0].checked && !rdo[1].checked) {
+                errorradio.innerHTML="Bạn chưa chọn hình thức";
+                check = false;
+            }else{
+                errorradio.innerHTML="";
+            }
+            
+            if(hoten.value != "" && email.value!="" && phone.value!="" && khoahoc.value!="chon" && (rdo[0].checked || rdo[1].checked)){
+                alert("Gửi thành công");
+                return true;
+            }
+            return check;
+        }
+    </script>
+</body>
+</html>

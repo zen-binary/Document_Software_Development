@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .img img{
+            width: 900px;
+            height: 500px;
+
+        }
+
+        .img{
+            
+            width: 900px;
+            float: left;
+        }
+        .btn1{
+            float: left;
+            width: 300px;
+            height: 500px;
+            position: relative;
+        }
+        .btn1 input{
+            position: absolute;
+            right: 10px;
+            bottom: 5px;
+            width: 100px;
+            height: 30px;
+            background-color: blue;
+            color: white
+        }
+        .btn2{
+            float: left;
+            width: 300px;
+            height: 500px;
+            position: relative;
+        }
+        .btn2 input{
+            position: absolute;
+            left: 10px;
+            bottom: 5px;
+            width: 100px;
+            height: 30px;
+            background-color: blue;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="btn1">
+            <input type="submit" value="Pre" onclick="pre()">
+        </div>
+        <div class="img">
+            <img src="img/0.jpg" alt="" id="anh">
+        </div>
+        
+        <div class="btn2">
+            <input type="submit" value="Next" onclick="next()">
+        </div>
+    </div>
+    
+    <script>
+        var index = 0;
+        var anh= document.getElementById("anh");
+        function auto() {
+            if (index == 4) {
+                index=0;
+            }
+            index++;
+            anh.src =" img/"+index+".jpg";
+            t=setTimeout("auto()",1000)
+        }
+        function pre() {
+            if (index == 0) {
+                index=4;
+            }
+            index--;
+            anh.src =" img/"+index+".jpg";
+        }
+
+        function next() {
+            if (index == 4) {
+                index=0;
+            }
+            index++;
+            anh.src =" img/"+index+".jpg";
+        }
+        window.onload= auto();
+    </script>
+
+</body>
+</html>

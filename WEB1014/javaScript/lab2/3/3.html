@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var kg = prompt('Nhap Kg: ');
+        var chieuCao = prompt('Nhap chieu cao: ');
+
+        var bmi = kg/Math.pow(chieuCao,2);
+
+
+        document.write('BMI: '+ bmi+ '<br>')
+        if (bmi<18.5) {
+            document.write('Ban thieu kg')
+        }else if(bmi >= 18.5 && bmi <25){
+            document.write('Ban binh thuong')
+        }else if(bmi >= 25 & bmi <30){
+            document.write('Ban thua can')
+        }else{
+            document.write('Ban beo phi')
+        }
+    </script>
+</body>
+</html>

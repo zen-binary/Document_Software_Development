@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .img img{
+            width: 900px;
+            height: 450px;
+        }
+        .main{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .btn{
+            width: 300px;
+            margin: 0 auto;
+            height: 100px;
+            
+        }
+        .buton{
+            float: left;
+        }
+        .buton input{
+            width: 100px;
+            height: 30px;
+            background-color: blue;
+            color: white;
+            border: 1px solid #ccc;
+        }
+        .txt{
+            float: left;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+
+        <div class="img">
+            <img src="img/0.jpg" id="anh" alt="">
+        </div>
+        <div class="btn">
+            <div class="buton">
+                <input type="submit" value="Stop" onclick="stop()">
+            </div>
+            <div class="txt"><span id="txt">?/5</span></div>
+            <div class="buton">
+                <input type="submit" value="Start" onclick="start()">
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var index = 0;
+        var anh = document.getElementById('anh');
+        var txt = document.getElementById('txt');
+        function start(){
+            txt.innerHTML = (index + 1) +"/5";
+            if (index == 4) {
+                index = -1;
+            }
+            index++;
+            anh.src = "img/"+index+".jpg";
+            
+            t = setTimeout("start()",1000);
+        }
+
+        function stop() {
+            clearTimeout(t);
+        }
+        window.onload = start();
+    </script>
+</body>
+</html>

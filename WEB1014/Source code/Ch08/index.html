@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        /*#container {
+            margin: 0 auto;
+            width: 666px;
+            text-align: center;
+        }
+        
+        #player-container {
+            margin: 0 auto;
+            background-color:black;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: 3px solid #4CC1BE;
+            border-radius: 7px;
+        }
+        
+        #controls {
+            margin-top: 6px;
+        }*/
+        /*.clock {
+            background-color: blue;
+            width: 400px;
+            text-align: center;
+            color: white;
+            font-size: 1em;
+        }
+        .clock>span {
+            padding: 10px;
+            border-radius: 10px;
+            background-color: black;
+        }
+        .clock>span>span {
+            padding: 5px;
+            border-radius: 10px;
+            background-color: red;
+        }
+        input {
+            padding: 15px;
+            margin: 20px;
+            font-size: 1.5em;
+        }*/
+        .box {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black
+        }
+    </style>
+</head>
+<body>
+
+<!--<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>-->
+
+<!--<div id="container">
+    <h1>Custom HTML5 Video Player</h1>
+    <div id="player-container">
+        <video id="myplayer" width="640" height="360">
+            <source src="SeagullsMediumAltMaster.mp4" type="video/mp4">
+            Your browser does not support HTML5 Video.
+        </video>
+        <div id="controls">
+            <button onclick="playPause()">Play/Pause</button>
+            <button onclick="stopVideo()">Stop</button>
+            <button onclick="replayVideo()">Replay</button>
+            <button onclick="increaseVolume()">Volume (+)</button>
+            <button onclick="decreaseVolume()">Volume (-)</button>
+            <button onclick="muteVolume()">Mute/Unmute</button>
+        </div>
+    </div>
+</div>-->
+
+<script>
+/*var player = document.getElementById("myplayer");
+
+function playPause() {
+    if (player.paused) { player.play();}
+    else { player.pause();}
+}
+
+function stopVideo() {
+    player.pause();
+    if (player.currentTime) {   player.currentTime = 0; }
+}
+
+function replayVideo() {
+    player.currentTime = 0;
+    player.play();
+}
+
+function increaseVolume() {
+    if (player.volume < 1)
+        player.volume = parseFloat(player.volume + 0.1).toFixed(1);
+}
+
+function decreaseVolume() {
+    if (player.volume > 0)
+        player.volume = parseFloat(player.volume - 0.1).toFixed(1);
+}
+
+function muteVolume() {
+    if (player.muted) { player.muted = false;}
+    else{ player.muted = true; }
+}
+/*var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}*/
+</script>
+
+
+<!--<div>
+    <input type="date" name="endDate">
+    <div class="clock"> <span><span class="days">0</span> Days</span> <span>
+        <span class="hours">0</span>Hours</span> <span>
+        <span class="minutes">0</span> Minutes</span> 
+        <span><span class="seconds">0</span>Seconds</span>
+    </div>
+</div>
+    
+<script>
+        const endDate = document.querySelector("input[name='endDate']");
+        const clock = document.querySelector(".clock");
+        let timeInterval;
+        let timeStop = true;
+        const savedValue = localStorage.getItem("countdown") || false;
+        if (savedValue) {
+            startClock(savedValue);
+            let inputValue = new Date(savedValue);
+            endDate.valueAsDate = inputValue;
+        }
+        endDate.addEventListener("change", function (e) {
+            e.preventDefault();
+            clearInterval(timeInterval);
+            const temp = new Date(endDate.value);
+            localStorage.setItem("countdown", temp);
+            startClock(temp);
+            timeStop = true;
+        });
+        function startClock(d) {
+            function updateCounter() {
+                let tl = (timeLeft(d));
+                if (tl.total <= 0) {
+                    timeStop = false;
+                }
+                for (let pro in tl) {
+                    let el = clock.querySelector("." + pro);
+                    if (el) {
+                        el.innerHTML = tl[pro];
+                    }
+                }
+            }
+            updateCounter();
+            if (timeStop) {
+                timeInterval = setInterval(updateCounter, 1000);
+            } else {
+                clearInterval(timeInterval);
+            }
+        }
+
+
+        function timeLeft(d) {
+            let currentDate = new Date();
+            let t = Date.parse(d) - Date.parse(currentDate);
+            let seconds = Math.floor((t / 1000) % 60);
+            let minutes = Math.floor((t / 1000 / 60) % 60);
+            let hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+            let days = Math.floor(t / (1000 * 60 * 60 * 24));
+            return {
+                "total": t,
+                "days": days,
+                "hours": hours,
+                "minutes": minutes,
+                "seconds": seconds
+            };
+        }
+</script>-->
+
+
+<!--<div class="container">
+    <div class="box" id="box0">Box #1</div>
+    <div class="box" id="box1">Box #2</div>
+    <div class="box" id="box2">Box #3</div>
+    <div class="box" id="box3">Box #4</div>
+</div>
+<script>
+        const main = document.querySelector(".container");
+        const boxes = document.querySelectorAll(".box");
+        /*main.addEventListener("click", (e) => {
+            console.log("4");
+        },false);
+        main.addEventListener("click", (e) => {
+            console.log("1");
+        },true);*/
+ 
+        boxes.forEach(ele => {
+            ele.addEventListener("click", (e) => {
+                console.log("3");
+            },false);
+            ele.addEventListener("click", (e) => {
+                console.log("2");
+                console.log(e.target.textContent);
+            },true);
+   
+        });
+
+</script>-->
+</body>
+</html>

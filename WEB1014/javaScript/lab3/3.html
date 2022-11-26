@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      input {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="button" value="7" onclick="toan_hang(7)" />
+    <input type="button" value="8" onclick="toan_hang(8)" />
+    <input type="button" value="9" onclick="toan_hang(9)" />
+    <input type="button" value="+" onclick="toan_tu('+')" />
+    <br />
+    <input type="button" value="4" onclick="toan_hang(4)" />
+    <input type="button" value="5" onclick="toan_hang(5)" />
+    <input type="button" value="6" onclick="toan_hang(6)" />
+    <input type="button" value="-" onclick="toan_tu('-')" />
+    <br />
+    <input type="button" value="1" onclick="toan_hang(1)" />
+    <input type="button" value="2" onclick="toan_hang(2)" />
+    <input type="button" value="3" onclick="toan_hang(3)" />
+    <input type="button" value="x" onclick="toan_tu('*')" />
+    <br />
+    <input type="button" value="0" onclick="toan_hang(0)" />
+    <input type="button" value="C" onclick="lam_lai()" />
+    <input type="button" value="=" onclick="thu_hien()" />
+    <input type="button" value=":" onclick="toan_tu('/')" />
+
+    <script>
+      var a = null;
+      var b = null;
+      var o = null;
+
+      function thu_hien() {
+        switch (o) {
+          case "+":
+            var c = a + b;
+            alert("ket qua = " + c);
+
+            break;
+          case "-":
+            var c = a - b;
+            alert("ket qua = " + c);
+
+            break;
+          case "/":
+            var c = a / b;
+            alert("ket qua = " + c);
+
+            break;
+          case "*":
+            var c = a * b;
+            alert("ket qua = " + c);
+
+            break;
+
+          default:
+            alert(o + "khong phai toan tu");
+            break;
+        }
+        lam_lai();
+      }
+
+      function toan_hang(x) {
+        if (a == null) {
+          a = x;
+        } else {
+          b = x;
+        }
+      }
+
+      function toan_tu(x) {
+        o = x;
+      }
+      function lam_lai() {
+        a = null;
+        b = null;
+        o = null;
+      }
+    </script>
+  </body>
+</html>

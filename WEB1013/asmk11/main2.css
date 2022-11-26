@@ -1,0 +1,142 @@
+.centen001{
+    width: 100%;
+    height: 1000px;
+    background-color: white;
+    clear: both;
+}
+.centenl01{
+    width: 200px;
+    height: 1000px;
+    float: left;
+    background-color: white;
+}
+
+.centenr01{
+    width: 900px;
+    height: 1000px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+}
+.quatrinh{
+    padding: 10px 5px;
+}
+.tieude{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.quatrinh>.noidung{
+    line-height: 20px;
+    padding: 0 10px;
+}
+.quatrinh>.noidung>p{
+    font-size: 18px;
+    text-align: justify;
+}
+.noidungtochu{
+    margin: 20px 20px;
+}
+.noidung>img{
+    padding-left: 150px;
+}
+
+.fromtt{
+    width: 300px;
+    height: 25px;
+    margin-right: 500px;
+    
+
+}
+.fromth>label{
+    padding-top: 30px;
+}
+.thongtinth{
+    margin-bottom: 30px;
+}
+.thongtinth>p{
+    margin-top: 20px;
+}
+.guibuton{
+    width: 50px;
+    height: 25px;
+    
+}
+.gopy{
+    width: 300px;
+    height: 25px;
+}
+.bandolh{
+    padding-top: 10px;
+}
+
+.centen0012{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    clear: both;
+}
+.centenl012{
+    width: 200px;
+    
+    float: left;
+    background-color: rgb(255, 255, 255);
+}
+.diachilh{
+    margin-left: 200px;
+}
+.tenhd{
+    margin: 10px 5px;
+}
+.tenhd>a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.anhhd{
+    height: 120px;
+    
+}
+.anhhd>img{
+    width: 200px;
+    float: left;
+    padding-right: 10px;
+}
+.hoatdong{
+    margin: 10px 0;
+}
+
+.tenhd>a:hover{
+    text-decoration: underline;
+    color: rgb(30, 135, 255);
+  
+}
+.conterleft3{
+    width: 100%;
+    
+    height: 1600px;
+    background-color: rgb(245, 245, 245);
+    
+    
+}
+.timkiemhs{
+    margin: 50px 0;
+    height: 50px;
+    background-color: #1397cc;
+    
+    
+}
+.texths{
+    margin: 10px 20px;
+    height: 25px;
+    width: 250px;
+}
+.butomhs{
+    height: 25px;
+    width: 100px;
+}
+.tablehs{
+    height: 1000px;
+    border: 1px solid #ccc;
+    margin-top: 50px;
+
+}

@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+.main{
+    width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+
+}
+.header-main{
+    width: 100%; 
+    height: 200px;
+    border: 1px solid #ccc;
+    
+}
+.baner>img{
+    width: 1000px; 
+    height: 200px;
+    margin: 0 auto;
+}
+.nav-main{
+    height: 40px;
+    background-color: rgba(181, 184, 185, 0.966);
+    margin: 0;
+}
+
+.menu{
+    list-style: none;
+
+}
+.menu>li{
+    float: left;
+    line-height: 40px;
+    padding: 0 20px;
+
+}
+.menu>li>a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: bold;
+}
+.menu>li:hover{
+    background-color:rgba(253, 31, 23, 0.966);;
+}
+.text{
+    width: 180px;
+    height: 20px;
+}
+.butom{
+    width: 80px;
+    height: 20px;
+    border: 0.5px solid rgb(206, 206, 206);
+    background: #ca0000;
+    color: white;
+}
+.timkiem{
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+footer{
+    height: 150px;
+    background-color: rgba(181, 184, 185, 0.966);;
+    clear: both;
+    text-align: center;
+}
+.banerdk>img{
+    width: 100%;
+    margin-top: 50px;
+}
+.tent{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    margin: 20px 0;
+}
+.diachit{
+    line-height: 30px;
+}
+
+
+.contenleft{
+    width: 65%;
+    height: 1400px;
+    background-color: rgb(241, 241, 241);
+    float: left;
+}
+.contenright{
+    float: right;
+    width: 35%;
+   
+    background-color: rgb(255, 255, 255);
+}
+
+
+.kiniem>.anh>img{
+    width: 600px;
+    margin: 0px 5px;
+    margin-top: 50px;
+}
+
+.vitrir{
+    margin-top: 20px ;
+    margin-left: 25px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+.tenvt{
+    font-weight: bold;
+}
+
+.boxtt{
+    width: 90%;
+    height: 500px;
+    border: 1px solid rgb(161, 160, 160);
+    margin-top: 50px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.boxtt11{
+    width: 90%;
+    height: 650px;
+    border: 1px solid rgb(161, 160, 160);
+    margin-top: 50px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.tentt{
+    height: 40px;
+    background-color: rgba(96, 160, 255, 0.966);
+    color: white;
+    line-height: 40px;
+    padding-left: 20px;
+    
+}
+.tennd{
+    height: 50px;
+    line-height: 60px;
+
+}
+.tennd>a{
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.tennd>a:hover{
+    text-decoration: underline;
+    color: blueviolet;
+}
+.anhnd{
+
+    margin-left: 10px;
+    float: left;
+}
+.anhnd>img{
+    width: 200px;
+    margin-right: 20px;
+}
+
+.boxtt1{
+    height: 200px;
+}
+.boxtt12{
+    height: 250px;
+}
+
+.new{
+    margin-left: 20px;
+    margin-top: 50px;
+    width: 300px;
+    height: 380px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+}
+.tengt{
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.ten{
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+
+}
+.tin{
+    height: 60px;
+    padding: 10px 0;
+    
+}
+.tin>img{
+    width: 100px;
+    float: left;
+}
+.tin>a{
+    font-size: 15px;
+    margin-left: 10px;
+    color: black;
+    text-decoration: none;
+}
+.ttdiachi{
+    height: 200px;
+    border: 1px solid #ccc;
+    width: 600px;
+    margin-top: 50px;
+    background-color: white;
+}
+.ttlienhe{
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    padding-left: 20px;
+}
+.ttlienhe2{
+    padding-left: 20px;
+}
+.ttlienhe22{
+    margin-top: 20px;
+    line-height: 30px;
+}
+.bando{
+    margin-top: 20px;
+}
+.anhnho{
+    margin-top: 50px;
+    margin-left: 50px;
+  
+}
+.anhnho1{
+    text-align: center;
+    width: 250px;
+    border: 1px solid #ccc;
+
+}

@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(360deg, rgba(255, 255, 255, 0.1),rgba(37, 37, 159, 0.738));
+}
+
+.main{
+    width: 1100px;
+    margin: 0 auto;
+}
+.hi{
+    height: 25px;
+    background-color: rgb(51, 47, 115);
+    
+}
+marquee{
+    color: aliceblue;
+    line-height: 25px;
+}
+.nav{
+    height: 80px;
+    border: 0.2px #ccc solid;
+    border-radius: 5px;
+    background-color: white;
+
+}
+.header{
+    width: 300px;
+    float: left;
+}
+.logo{
+    width: 180px;
+    padding-left: 60px;
+    
+}
+.menu{
+    
+    width: 790px;
+    height: 80px;
+    float: left;
+}
+
+.menu>ul{
+    list-style: none;
+    line-height: 80px;
+    padding-left: 80px;
+}
+
+.menu>ul>li{
+    float: left;
+    padding: 0 40px;
+}
+.menu>ul>li>a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+.menu>ul>li>a:hover{
+    color: rgb(41, 35, 122);
+    text-decoration: underline;
+}
+.conten{
+    height: 1000px;
+    background-color: rgba(245, 245, 245, 0.407);
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.form{
+    width: 600px;
+    height: 800px;
+    background-color: white;
+    border-radius: 5px;
+    float: left;
+}
+form{
+    padding-left: 85px;
+    padding-top: 50px;
+}
+label{
+    font-size: 18px;
+    line-height: 40px;
+    
+}
+input{
+    width: 400px;
+    height: 25px;
+}
+.button{
+    padding-top: 50px; 
+    padding-left: 300px;
+}
+.button>input{
+    width: 100px;
+    bottom: 20px;
+}
+.gesin{
+    width: 200px;
+    float: left;
+    
+}
+.imggs{
+    padding-top: 120px;
+    padding-left: 150px;
+}
+.slide img{
+    width: 850px;
+    height: 460px;
+}
+.slide{
+    text-align: center;
+    padding-top: 20px;
+}
+.nut{
+    margin-top: 20px;
+    margin-left: 225px;
+}
+.nut input{
+    width: 100px;
+}
+.nut input:hover{
+    background-color: #ccc;
+}
+.footer{
+    clear: both;
+    background-color: rgb(51, 47, 115);
+    text-align: center;
+    height: 100px;
+    
+}
+.foo{
+    padding-top: 20px;
+}
+.footer p{
+    color: white;
+    
+}

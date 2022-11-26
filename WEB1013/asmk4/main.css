@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.main{
+    width: 1000px;
+    margin: 0 auto;
+
+}
+.header-main{
+    width: 1000px; 
+    height: 120px;
+    background-color: rgb(233, 233, 233);
+    
+}
+.baner>img{
+    width: 1000px; 
+    margin: 0 auto;
+}
+.nav-main{
+    height: 35px;
+    background-color: rgba(50, 125, 190, 0.966);
+    margin: 0;
+}
+.menu{
+    list-style: none;
+
+}
+.menu>li{
+    float: left;
+    line-height: 35px;
+    padding: 0 10px;
+    border-right: 1px solid #ccc;
+
+}
+.menu>li>a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+.menu>li:hover{
+    background-color:rgba(38, 98, 150, 0.966);
+}
+.text{
+    width: 180px;
+    height: 20px;
+}
+.butom{
+    width: 80px;
+    height: 20px;
+    border: 0.5px solid rgb(206, 206, 206);
+    background: rgba(38, 102, 158, 0.966);
+    color: white;
+}
+.timkiem{
+    text-align: right;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+.contenleft{
+    width: 65%;
+    height: 1000px;
+    background-color: rgb(241, 241, 241);
+    float: left;
+}
+.noibat{
+    border: 1px solid #ccc;
+    width: 98%;
+    margin-top: 20px ;
+    margin-left: 5px;
+    position: relative;
+    border-radius: 2px;
+    
+
+}
+
+.noibat>img{
+    width: 100%;
+}
+.thongbao{
+    position: absolute;
+    background-color: rgba(92, 90, 90, 0.8);
+    bottom: 0px;
+    height: 100px;
+    
+}
+.thongbao>p{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 10px;
+    
+
+}
+.contenright{
+    float: right;
+    width: 35%;
+    height: 1000px;
+    background-color: rgb(255, 255, 255);
+}
+.new{
+    margin-left: 40px;
+    margin-top: 40px;
+    width: 300px;
+    height: 380px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+}
+
+
+.ten{
+    height: 25px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    background-color: rgba(0, 103, 199, 0.966);
+    border-radius: 5px;
+    color: white;
+
+}
+.tin{
+    
+    padding: 10px 0;
+    
+}
+
+.tin>a{
+    font-size: 15px;
+    margin-left: 10px;
+    color: black;
+    text-decoration: none;
+}
+.tin>a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+
+
+.kiniem>.ten{
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    margin: 5px 5px;
+
+}
+.kiniem>.anh>img{
+    width: 600px;
+    margin: 5px 5px;
+}
+.baner1{
+    margin-top: 50px;
+    margin-left: 25px;
+}
+.baner1>img{
+    width: 300px;
+}
+.vitrir{
+    margin-top: 20px ;
+    margin-left: 25px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+.tenvt{
+    font-weight: bold;
+}
+
+.boxtt{
+    width: 90%;
+    height: 250px;
+    border: 1px solid rgb(161, 160, 160);
+    margin-top: 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.boxtt01{
+    width: 90%;
+    
+    margin-top: 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.boxtt11{
+    width: 90%;
+    height: 350px;
+    border: 1px solid rgb(161, 160, 160);
+    margin-top: 50px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.tentt{
+    height: 40px;
+    background-color: rgba(24, 105, 211, 0.966);
+    color: white;
+    line-height: 40px;
+    padding-left: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    
+}
+.tentt12{
+    height: 40px;
+    color: rgba(24, 105, 211, 0.966);
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(24, 105, 211, 0.966);
+}
+.tennd{
+    height: 50px;
+    line-height: 60px;
+
+}
+.tennd>a{
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(156, 38, 137);
+    margin-left: 10px;
+    font-weight: bold;
+}
+.tennd>a:hover{
+    text-decoration: underline;
+    color: rgb(46, 110, 194);
+}
+.anhnd{
+
+    margin-left: 10px;
+    float: left;
+    
+}
+.anhnd>img{
+    width: 200px;
+    margin-right: 20px;
+}
+.anhnd12{
+
+    margin-left: 10px;
+    float: left;
+    
+}
+.anhnd12>img{
+    width: 200px;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+.boxtt1{
+    height: 250px;
+}
+.boxtt12{
+    height: 180px;
+    border-bottom: 1px double #ccc;
+}
+footer{
+    height: 120px;
+    background-color: rgb(214, 214, 214);
+    clear: both;
+    text-align: left;
+    color: black;
+    padding-left: 20px;
+}
+.tent{
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 20px;
+    margin: 20px 0;
+}
+.diachit{
+    line-height: 30px;
+}
+.ttgioithieu{
+    line-height: 30px;
+    margin-top: 20px;
+    text-align: center
+}
+.tengt{
+    font-weight: bold;
+    margin-top: 50px;
+}
+.h4>p{
+    padding-top: 50px;;
+    font-weight: bold;
+}
+.lich{
+    height: 500px;
+    width: 100%;
+    border: 1px solid #ccc;
+    
+}
+.tenlich{
+    height: 50px;
+    background-color: rgba(211, 24, 186, 0.966);
+    line-height: 50px;
+    
+}
+.lich>.tenlich>ul{
+    list-style: none;
+    
+    
+
+}
+.lich>.tenlich>ul>li{
+    float: left;
+    margin-right: 100px;
+}
+
+.lichthutu>ul{
+    list-style: none;
+}
+.lichthutu>ul>li{
+    float: left;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+.ttdiachi{
+    height: 200px;
+    border: 1px solid #ccc;
+    width: 600px;
+    margin-top: 50px;
+    background-color: white;
+}
+.ttlienhe{
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    padding-left: 20px;
+}
+.ttlienhe2{
+    padding-left: 20px;
+}
+.ttlienhe22{
+    margin-top: 20px;
+    line-height: 30px;
+}

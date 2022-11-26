@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Hi</title>
+    </head>
+    <body>
+        <div id="hoa">
+        <p>Hoa Hong</p>
+        <p>Hoa Lan</p>
+        <p>Hoa Dao</p>
+
+        <div class="example">Hi</div>
+        <div class="example">Hello</div>
+        </div>
+
+        <div id="one" class="example">Hi</div>
+        <div id="two" class="example">Hello</div>
+        <div id="three" class="something">Hi!</div>
+        <script type="text/javascript">
+            //document.getElementById("two").innerText="Two";
+            document.getElementById("two").textContent="Two";
+            console.log(document.querySelector("div"));
+            console.log(document.querySelector(".something"));
+            console.log(document.querySelectorAll("div.example"));
+        </script>
+    </body>
+</html>
+
+
+

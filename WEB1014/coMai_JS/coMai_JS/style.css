@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wapper {
+    width: 500px;
+    height: 350px;
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
+
+}
+.box1 {
+    margin: 20px;
+}
+input {
+    height: 30px;
+    width: 200px;
+    margin-left: 1px;
+}
+.button1 {
+    height: 40px;
+    width: 40px;
+    background-color: orangered;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 5px black;
+    font-size: 25px;
+}

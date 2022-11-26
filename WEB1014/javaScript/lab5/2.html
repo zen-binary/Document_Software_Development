@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Danh Mục Hàng Hóa</h3>
+    <table border="1">
+      <tr>
+        <td>Iphone 9</td>
+        <td>$ 2700</td>
+        <td><button onclick="them(this)">Thêm</button></td>
+      </tr>
+      <tr>
+        <td>Samsung Star</td>
+        <td>$ 1500</td>
+        <td><button onclick="them(this)">Thêm</button></td>
+      </tr>
+      <tr>
+        <td>Nokia 2020</td>
+        <td>$ 1200</td>
+        <td><button onclick="them(this)">Thêm</button></td>
+      </tr>
+      <tr>
+        <td>Sony Xperia</td>
+        <td>$ 1700</td>
+        <td><button onclick="them(this)">Thêm</button></td>
+      </tr>
+    </table>
+
+    <h3>Giỏ Hàng Của Bạn</h3>
+    <h3 id="empty">Bạn chưa chọn mặt hàng nào</h3>
+    <div id="not-empty">
+
+      <table border="1" id="cart">
+        <h3>Tổng tiền: $ <span id="tong"> 0 </span></h3>
+      </table>
+
+    </div>
+    <script>
+      //thêm
+        function them(button){
+            var row =  button.parentElement.parentElement.cloneNode(true);
+            var btnxoa = row.getElementsByTagName("button")[0];
+            btnxoa.innerText = "Xóa";
+            btnxoa.setAttribute('onclick', 'xoa(this)');
+            document.getElementById('cart').appendChild(row);
+            tinhtong();
+
+        }
+        //xóa
+        function xoa(button){
+            var row = button.parentElement.parentElement;
+            document.getElementById('cart').removeChild(row);
+            tinhtong();
+        }
+        //tổng
+        function tinhtong() {
+
+
+          var cart = document.getElementById('cart');
+
+          var rows = cart.getElementsByTagName("tr");
+          var tong = 0;
+          for (var i = 0; i < rows.length; i++) {
+           
+            var cells = rows[i].getElementsByTagName('td');
+            var price = cells[1].innerText.substr(2);
+            
+            tong+=1*price;
+          }
+          document.getElementById('tong').innerText= tong;
+          if (tong==0) {
+            document.getElementById('empty').style.display = "";
+            document.getElementById('not-empty').style.display="none";
+            
+          }
+            
+        }
+    </script>
+
+  </body>
+</html>

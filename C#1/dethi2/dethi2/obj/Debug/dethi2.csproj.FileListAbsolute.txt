@@ -1,0 +1,8 @@
+D:\C#\dethi2\dethi2\bin\Debug\dethi2.exe.config
+D:\C#\dethi2\dethi2\bin\Debug\dethi2.exe
+D:\C#\dethi2\dethi2\bin\Debug\dethi2.pdb
+D:\C#\dethi2\dethi2\obj\Debug\dethi2.csproj.AssemblyReference.cache
+D:\C#\dethi2\dethi2\obj\Debug\dethi2.csproj.SuggestedBindingRedirects.cache
+D:\C#\dethi2\dethi2\obj\Debug\dethi2.csproj.CoreCompileInputs.cache
+D:\C#\dethi2\dethi2\obj\Debug\dethi2.exe
+D:\C#\dethi2\dethi2\obj\Debug\dethi2.pdb

@@ -1,0 +1,8 @@
+D:\C#\bai4_4\bai4_4\bin\Debug\bai4_4.exe.config
+D:\C#\bai4_4\bai4_4\bin\Debug\bai4_4.exe
+D:\C#\bai4_4\bai4_4\bin\Debug\bai4_4.pdb
+D:\C#\bai4_4\bai4_4\obj\Debug\bai4_4.csproj.AssemblyReference.cache
+D:\C#\bai4_4\bai4_4\obj\Debug\bai4_4.csproj.SuggestedBindingRedirects.cache
+D:\C#\bai4_4\bai4_4\obj\Debug\bai4_4.csproj.CoreCompileInputs.cache
+D:\C#\bai4_4\bai4_4\obj\Debug\bai4_4.exe
+D:\C#\bai4_4\bai4_4\obj\Debug\bai4_4.pdb

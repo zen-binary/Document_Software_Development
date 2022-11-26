@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ass</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="hi">
+        <marquee behavior="" direction="">xin chào các bạn ăn cơm chưa</marquee>
+      </div>
+      <div class="nav">
+        <div class="header">
+          <img src="image/logo.png" alt="" class="logo" />
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="slide-show.html">SlideShow</a></li>
+            <li><a href="ban-hang.html">Bán Hàng</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="conten">
+        <div class="form" onsubmit="return kiemtra()">
+          <form action="">
+            <label for="">Họ Và Tên</label> <br />
+            <input type="text" id="name" name="name"  /> <br>
+            <label for="">Ngày Sinh</label> <br />
+            <input type="date" id="date" name="date" /> <br>
+            <label for="">Số Điện Thoại</label> <br />
+            <input type="text" id="phone" name="phone" /> <br>
+            <label for="">Email</label> <br />
+            <input type="email" id="email" name="email"/> <br>
+            <label for="">Địa Chỉ</label> <br />
+            <input type="text" id="address" name="address" /> <br>
+            <label for="">Liên Hệ</label> <br />
+            <textarea name="lienhe" id="lienhe" cols="52." rows="10"></textarea>
+            
+
+            <div class="button">
+                <input type="submit" value="Gửi" onclick="kiemtra()">
+            </div>
+            <br>
+            
+          </form>
+          
+        </div>
+        <div class="gesin">
+            <img src="image/AF0005951_09.gif" alt="" class="imggs" >
+        </div>
+       
+      </div>
+      <script>
+        
+        function kiemtra(){
+          var name = document.getElementById("name");
+          var date = document.getElementById("date");
+          var phone = document.getElementById("phone");
+          var email = document.getElementById("email");
+          var address = document.getElementById("address");
+          var lienhe = document.getElementById("lienhe");
+          if(name.value.length==0 && date.value.length==0 && phone.value.length==0 && email.value.length==0 && address.value.length==0 && lienhe.value.length==0){
+            
+            name.style.border= "1px solid red";
+            date.style.border= "1px solid red";
+            phone.style.border= "1px solid red";
+            email.style.border= "1px solid red";
+            address.style.border= "1px solid red";
+            lienhe.style.border= "1px solid red";
+            return false;
+          }
+
+          //name
+          if (name.value.length==0) {
+            name.style.border= "1px solid red";
+            return false;
+          }
+          if(name.value.length!=0){
+            name.style.border= "1px solid black";
+            
+          }
+
+          //date
+          if (date.value.length==0) {
+            date.style.border= "1px solid red";
+            return false;
+          }
+          if(date.value.length!=0){
+            date.style.border= "1px solid black";
+          }
+          //phone
+          if (phone.value.length==0) {
+            phone.style.border= "1px solid red";
+            return false;
+          }
+          if(phone.value.length!=0){
+            phone.style.border= "1px solid black";
+          }
+          //email
+          if (email.value.length==0) {
+            email.style.border= "1px solid red";
+            return false;
+          }
+          if(email.value.length!=0){
+            email.style.border= "1px solid black";
+          }
+          //address
+          if (address.value.length==0) {
+            address.style.border= "1px solid red";
+            return false;
+          }
+          if(address.value.length!=0){
+            address.style.border= "1px solid black";
+          }
+          //lienhe
+          if (lienhe.value.length==0) {
+            lienhe.style.border= "1px solid red";
+            return false;
+          }
+          if(lienhe.value.length!=0){
+            lienhe.style.border= "1px solid black";
+          }
+
+          if (name.value.length!=0 && date.value.length!=0 && phone.value.length!=0 && email.value.length!=0 && address.value.length!=0  && lienhe.value.length!=0 ){ 
+            alert("Gửi thành công");
+            return true;
+          
+
+          }
+
+        }
+      </script>
+      <div class="footer">
+        <div class="foo">
+          <p>Email: chienlvph27953@fpt.edu.vn</p>
+          <p>Tên đăng nhập: chienlvph27953</p>
+          <p>Lớp: CP18103</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

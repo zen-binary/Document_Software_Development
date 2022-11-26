@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .main{
+            width: 500px;
+            margin: 0 auto;
+        }
+        .form{
+            border: 1px solid #ccc;
+            width: 500px;
+            height: 600px;
+            
+        }
+        .rdo{
+            width: 200px;
+            height: 20px;
+            float: right;
+            margin-right: 100px;
+            
+        }
+        h2{
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .txt{
+            
+            margin-top: 20px;
+        }
+        .txt label>input{
+            float: right;
+            margin-right: 100px;
+            width: 200px;
+        }
+        .txt label{
+            margin-left: 10px;
+        }
+        .txt>span{
+            margin-left: 200px;
+            color: red;
+            font-size: 12px;
+        }
+        .btn{
+            text-align: center;
+            margin-top: 100px;
+
+        }
+        .btn input{
+            width: 100px;
+            height: 50px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <div class="form">
+            <h2>Đăng kí thành viên</h2>
+            <form action="" onsubmit="return checkform()">
+                <div class="txt">
+                    <label for="">Họ Tên <input type="text" id="hoten"></label>
+                    
+                    <br><span id="error-hoten"></span>
+                </div>
+                <div class="txt">
+                    <label for="">Email <input type="text" id="email"></label>
+                    <br><span id="error-email"></span>
+                </div>
+                <div class="txt">
+                    <label for="">Số điện thoại <input type="text" id="phone"></label>
+                    <br><span id="error-phone"></span>
+                </div>
+                <div class="txt">
+                    <label for="">User <input type="text" id="user"></label>
+                    <br><span id="error-user"></span>
+                </div>
+                <div class="txt">
+                    <label for="">Pass<input type="password" id="pass"></label>
+                    <br><span id="error-pass"></span>
+                </div>
+
+                <div class="txt">
+                    <label for="">Repass<input type="password" id="repass"></label>
+                    <br><span id="error-repass"></span>
+                </div>
+                <div class="txt">
+                    <label for="">Bạn biết dúng tôi qua 
+                        <div class="rdo">
+                            <input type="radio" name="radio" id="rdo">Bạn giới thiệu</span>
+                            <input type="radio" name="radio" id="rdo"><span>Qua FB</span>
+                        </div>
+                    </label>
+                    <span id="error-rdo"></span>
+                </div>
+                <div class="btn">
+                    <input type="submit" value="Đăng kí" name="" id="btn" onclick="checkform()" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+            var hoten = document.getElementById("hoten");
+            var email = document.getElementById("email");
+            var phone = document.getElementById("phone");
+            var user = document.getElementById("user");
+            var pass = document.getElementById("pass");
+            var repass = document.getElementById("repass");
+            var rdo = document.getElementsByName("radio");
+
+            var errorhoten = document.getElementById("error-hoten");
+            var erroremail = document.getElementById("error-email");
+            var errorphone = document.getElementById("error-phone");
+            var erroruser = document.getElementById("error-user");
+            var errorpass = document.getElementById("error-pass");
+            var errorrepass = document.getElementById("error-repass");
+            var errorrdo = document.getElementById("error-rdo");
+            var chkemail = /\w+@\w+\.\w/;
+            var chksdt = /0\d{9}/;
+            var check = true;
+
+
+        function checkform(){
+
+            if (hoten.value =="" && email.value =="" && phone.value =="" && user.value =="" && pass.value =="" && repass.value =="" ) {
+                alert("Vui lòng nhập đủ thông tin");
+               
+            }
+
+            if (hoten.value =="") {
+                hoten.style.border = "1px solid red";
+                errorhoten.innerHTML= "Vui lòng nhập họ tên";
+                check = false;
+            }else{
+                hoten.style.border = "";
+                errorhoten.innerHTML= "";
+            }
+            if (email.value =="") {
+                email.style.border = "1px solid red";
+                erroremail.innerHTML= "Vui lòng nhập Email";
+                check = false;
+            }else if (!chkemail.test(email.value)) {
+                email.style.border = "1px solid red";
+                erroremail.innerHTML= "Vui lòng nhập email đúng định dạnh";
+                check = false;
+            }else{
+                email.style.border = "";
+                erroremail.innerHTML= "";
+            }
+            if (phone.value =="") {
+                phone.style.border = "1px solid red";
+                errorphone.innerHTML= "Vui lòng nhập số điện thoại";
+                check = false;
+               
+            }else{
+                if (!chksdt.test(phone.value)) {
+                    phone.style.border = "1px solid red";
+                    errorphone.innerHTML= "Vui lòng nhập đúng định dạng sdt có số 0 ở đầu và có 10 sô";
+                    check = false;
+                }else{
+                    phone.style.border = "";
+                    errorphone.innerHTML= "";
+                }
+                
+            }
+
+            if(user.value == ""){
+                user.style.border = "1px solid red";
+                erroruser.innerHTML= "Vui lòng nhập user";
+                check = false;
+            }else{
+                if (user.value.length < 8) {
+                    user.style.border = "1px solid red";
+                    erroruser.innerHTML= "User phải ít nhất 8 kí tự";
+                    check = false;
+                }else{
+                    user.style.border = "";
+                    erroruser.innerHTML= "";
+                }
+                
+            }
+            
+            if (pass.value =="") {
+                pass.style.border = "1px solid red";
+                errorpass.innerHTML= "Vui lòng nhập pass";
+                check = false;
+            }else{
+                pass.style.border = "";
+                errorpass.innerHTML= "";
+            }
+            if (repass.value =="") {
+                repass.style.border = "1px solid red";
+                errorrepass.innerHTML= "Vui lòng nhập repass";
+                check = false;
+            }else{
+                if (pass.value === repass.value) {
+                    repass.style.border = "";
+                    errorrepass.innerHTML= "";
+                }else{
+                    repass.style.border = "1px solid red";
+                    errorrepass.innerHTML= "Vui lòng nhập repass trùng vs pass";
+                }
+                
+            }
+            if (rdo[0].checked == false && rdo[1].checked == false) {
+                errorrdo.innerHTML= "Bạn chưa cho chúng tôi biết bạn biết tôi thong qua đâu";
+                return false;
+            }else{
+                errorrdo.innerHTML= "";
+                
+            }
+            if (hoten.value !="" && email.value !="" && phone.value !="" && user.value !="" && pass.value !="" && repass.value !="" ) {
+                alert("Gửi thành công");
+                return true;
+            }
+           
+            return check;
+        }
+    </script>
+</body>
+</html>

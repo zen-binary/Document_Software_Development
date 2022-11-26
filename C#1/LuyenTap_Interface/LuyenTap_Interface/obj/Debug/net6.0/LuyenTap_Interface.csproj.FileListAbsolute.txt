@@ -1,0 +1,15 @@
+D:\C#\LuyenTap_Interface\LuyenTap_Interface\obj\Debug\net6.0\LuyenTap_Interface.csproj.AssemblyReference.cache
+D:\C#\LuyenTap_Interface\LuyenTap_Interface\obj\Debug\net6.0\LuyenTap_Interface.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\LuyenTap_Interface\LuyenTap_Interface\obj\Debug\net6.0\LuyenTap_Interface.AssemblyInfoInputs.cache
+D:\C#\LuyenTap_Interface\LuyenTap_Interface\obj\Debug\net6.0\LuyenTap_Interface.AssemblyInfo.cs
+D:\C#\LuyenTap_Interface\LuyenTap_Interface\obj\Debug\net6.0\LuyenTap_Interface.csproj.CoreCompileInputs.cache
+D:\C#\LuyenTap_Interface\LuyenTap_Interface\bin\Debug\net6.0\LuyenTap_Interface.exe
+D:\C#\LuyenTap_Interface\LuyenTap_Interface\bin\Debug\net6.0\LuyenTap_Interface.deps.json
+D:\C#\LuyenTap_Interface\LuyenTap_Interface\bin\Debug\net6.0\LuyenTap_Interface.runtimeconfig.json
+D:\C#\LuyenTap_Interface\LuyenTap_Interface\bin\Debug\net6.0\LuyenTap_Interface.dll
+D:\C#\LuyenTap_Interface\LuyenTap_Interface\bin\Debug\net6.0\LuyenTap_Interface.pdb
+D:\C#\LuyenTap_Interface\LuyenTap_Interface\obj\Debug\net6.0\LuyenTap_Interface.dll
+D:\C#\LuyenTap_Interface\LuyenTap_Interface\obj\Debug\net6.0\refint\LuyenTap_Interface.dll
+D:\C#\LuyenTap_Interface\LuyenTap_Interface\obj\Debug\net6.0\LuyenTap_Interface.pdb
+D:\C#\LuyenTap_Interface\LuyenTap_Interface\obj\Debug\net6.0\LuyenTap_Interface.genruntimeconfig.cache
+D:\C#\LuyenTap_Interface\LuyenTap_Interface\obj\Debug\net6.0\ref\LuyenTap_Interface.dll
